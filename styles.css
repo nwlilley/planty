@@ -21,13 +21,14 @@ html {
 body {
     font-family: "IBM Plex Mono", monospace;
     color: #2a2a2a;
+    overflow-x: hidden;
 }
 
 .nav {
     position: fixed;
     top: 0;
     left: -24rem;
-    z-index: 1;
+    z-index: 2;
     width: 24rem;
     height: 100vh;
     background-color: #00b98d;
@@ -59,6 +60,22 @@ body {
     fill: white;
 }
 
+.nav__open-button {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 1.6rem;
+    text-decoration: none;
+    color: #2a2a2a; 
+    font-size: 1.6rem;
+}
+
+.nav__open-button img {
+    margin-right: .5rem;
+    vertical-align: middle;
+}
+
 main {
     position: relative;
     z-index: 0;
@@ -76,5 +93,56 @@ main {
     position: relative;
     transform: translate(24rem, 0);
 
+}
 
+.plant-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.plant-content__text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+.plant-content__text--header {
+    font-size: 4.8rem;
+    font-family: "Young Serif", 'Times New Roman', Times, serif;
+    line-height: 1.2;
+}
+
+.plant-content__text--body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+}
+
+.plant-content__text--button {
+    display: inline-block;
+    width: 16rem;
+    font-size: 1.6rem;
+    background-color: #00b98d;
+    color: #ffffff;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.plant-content__slide,
+.plant-content__text {
+    width: 35rem;
+}
+
+.plant-content__slide {
+    height: 47.5rem;
+    position: relative
+}
+
+.plant-content__slide--image {
+    position: absolute;
+    top: 0;
+    left: 0;
 }

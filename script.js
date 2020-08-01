@@ -1,16 +1,10 @@
-const toggle = document.querySelector('.toggle-nav')
+const openNav = document.querySelector('.nav__open-button')
 const main = document.querySelector('main')
 const nav = document.querySelector('nav')
 const closeButton = document.querySelector('.nav__close-button')
 
-toggle.addEventListener('click', () => {
+openNav.addEventListener('click', () => {
   nav.classList.toggle('open')
-
-  if (main.classList.contains('open')) {
-    toggle.innerHTML = '<img src="assets/close.svg">Close'
-  } else {
-    toggle.innerHTML = '<img src="assets/menu.svg">Open'
-  }
 })
 
 closeButton.addEventListener('click', () => {

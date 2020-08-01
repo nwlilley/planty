@@ -6,12 +6,13 @@
     <title>Planty</title>
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="script.js" defer></script>
+    <script type="module" src="slides.js" defer></script>
     
 </head>
 <body>
     <nav class="nav">
       <a href="#" class="nav__close-button ">
-        <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path 
           class="nav__close-button--path" fill-rule="evenodd" clip-rule="evenodd" d="M9.89954 7.07104L2.82849 0L0 2.82861L7.07104 9.89966L0.00012207 16.9705L2.82849 19.7988L9.89941 12.728L16.9706 19.7991L19.7991 16.9707L12.7279 9.89941L19.7991 2.82837L16.9707 0L9.89954 7.07104Z" fill="#2A2A2A"/>
           </svg>
@@ -22,14 +23,28 @@
       
     </nav>
    
-  <a href="#" class="toggle-nav ">
-    <img src="assets/menu.svg">Open
+  <a href="#" class="nav__open-button">
+    <img src="assets/menu.svg">
+    Menu
     </a>
   <main>
     
 
-    <section>
-      <img src="assets/plant1.jpg" srcset="assets/plant.jpg, assets/plant1-2x.jpg 2x">
+    <section class="plant-content">
+      <div class="plant-content__slide">
+        <img class="plant-content__slide--image" src="assets/plant1.jpg" srcset="assets/plant1.jpg, assets/plant1-2x.jpg 2x">
+        <img class="plant-content__slide--images" src="assets/plant2.jpg" srcset="assets/plant2.jpg, assets/plant2-2x.jpg 2x">
+        <img class="plant-content__slide--image" src="assets/plant3.jpg" srcset="assets/plant3.jpg, assets/plant3-2x.jpg 2x">
+        <img class="plant-content__slide--image" src="assets/plant4.jpg" srcset="assets/plant4.jpg, assets/plant4-2x.jpg 2x">
+        <img class="plant-content__slide--image" src="assets/plant5.jpg" srcset="assets/plant5.jpg, assets/plant5-2x.jpg 2x">
+      </div>
+
+      <div class="plant-content__text">
+        <h1 class="plant-content__text--header">Plant set</h1>
+        <p class="plant-content__text--body">This beginner plant set, containing 6 succulents, 3 cacti and 2 trees is aimed at sprucing up your apartment. It’s suitable for places with both bright and low access to sunlight. Each plant comes with it’s own perfect plant bot.</p>
+        <a href="#" class="plant-content__text--button">Buy for $599</a>
+      </div>
+      
     </section>
   </main>
 </body>
