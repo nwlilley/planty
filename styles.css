@@ -1,3 +1,9 @@
+@keyframes fade {
+    0% { opacity: 0}
+    100% { opacity: 100}
+
+}
+
 @font-face {
     font-family: "IBM Plex Mono";
     src: url("assets/ibm-plex-mono.woff2"), url("assets/ibm-plex-mono.woff")
@@ -102,6 +108,8 @@ main {
     height: 100vh;
 }
 
+
+
 .plant-content__text {
     display: flex;
     flex-direction: column;
@@ -145,4 +153,13 @@ main {
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform .5s, box-shadow .5s;
+}
+
+.plant-content__slide--image:first-child {
+    z-index: 1;
+}
+
+.plant-content__slide--image:hover {
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .3);
 }
